@@ -56,15 +56,104 @@
 */
 
 .container-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 200px;
+}
+
+.card-1{
+    margin-top: 30px;
+    margin-right: 10px;
+    width: calc((100% / 3) - 30px);
+}
+
+
+/*
+    FOTO
+*/
+
+
+.foto{
+    position: relative;
+}
+
+.foto .immagine2{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.foto:hover .immagine2{
+    background-color: white;
+    display: block;
+}
+
+.immagine2{
+    max-width: 100%;
+}
+
+.immagine{
+    max-width: 100%;
+}
+
+
+.sconto{
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
     background-color: red;
-    margin-left: 300px;
-    margin-right: 300px;
+    color: aliceblue
 }
 
-.uomo1{
-    width: calc((100% / 3) * 1);
+.sostenibility{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    background-color: green;
+    color: aliceblue
 }
 
-.uomo1 > img{
-    width: 100%;
+.preferiti{
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    background-color: white;
+    color: black
+}
+
+/*
+    DETTAGLI PREZZO
+*/
+
+.data{
+    margin: 0px;
+    padding: 0px;
+}
+
+.marca{
+    color: gray;
+    font-size: 0.8em;
+}
+
+.type{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.price{
+    color: red;
+}
+
+/*
+    FOOTER
+*/
+
+footer{
+    background-color: darkslategray;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
 }
